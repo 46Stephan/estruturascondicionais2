@@ -6,15 +6,15 @@ Abaixo de 100m2 = TERRENO POPULAR
 Entre 100m2 e 500m2 = TERRENO MASTER
 Acima de 500m2 = TERRENO VIP */
 
-let comprimento =  parseFloat(prompt('Informe o comprimento do terreno: '));
+let comprimento = parseFloat(prompt('Informe o comprimento do terreno: '));
 let largura = parseFloat(prompt('Informe a largura do terreno: '));
 let metroQuadrado = comprimento * largura;
 
 
-if(metroQuadrado < 100){
+if (metroQuadrado < 100) {
     document.write('TERRENO POPULAR: Abaixo de 100 metros quadrados.');
-}else if (metroQuadrado >= 100 && metroQuadrado <= 500){
+} else if (metroQuadrado >= 100 && metroQuadrado <= 500) {
     document.write('TERRENO MASTER: Entre 100 metros quadrados à 500 metros quadrados.');
-}else{
+} else {
     document.write('TERRENO VIP: Acima de 500 metros quadrados.');
 }

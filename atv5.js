@@ -6,10 +6,10 @@ longas. */
 let distancia = parseFloat(prompt('Qual é a distância gostaria de percorrer? KM'));
 let valorCorrida;
 
-if(distancia <= 200){
+if (distancia <= 200) {
     valorCorrida = 0.50 * distancia;
-}else{
+} else {
     valorCorrida = 0.45 * distancia;
 }
 
-document.write('O valor da corrida é: R$ '+valorCorrida);
+document.write('O valor da corrida é: R$ ' + valorCorrida);

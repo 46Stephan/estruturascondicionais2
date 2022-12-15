@@ -9,15 +9,15 @@ let salarioM = 0;
 
 let resposta = 's'
 
-while(resposta == 's'){
+while (resposta == 's') {
     let sexo = prompt('Infome o seu sexo [H/M]:');
     sexo.toLocaleLowerCase();
 
-    if(sexo == 'h'){
+    if (sexo == 'h') {
         let salario = parseFloat(prompt('Informe o salário: R$'));
         salarioH = salario + salarioH;
 
-    } else{
+    } else {
         let salario = parseFloat(prompt('Informe o salário: R$'));
         salarioM = salario + salarioM;
     }
@@ -25,5 +25,5 @@ while(resposta == 's'){
     resposta = prompt('Deseja incluir mais alguma informação? Digite s p/ S e n para finalizar o processo: [s/n]').toLocaleLowerCase();
 }
 
-document.write('Total salário HOMEM: R$ ' +salarioH+ '<br />');
-document.write('Total salário MULHER: R$ ' +salarioM);
+document.write('Total salário HOMEM: R$ ' + salarioH + '<br />');
+document.write('Total salário MULHER: R$ ' + salarioM);

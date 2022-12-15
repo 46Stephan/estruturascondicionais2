@@ -10,12 +10,12 @@ const nome = prompt('INFORME O SEU NOME: ');
 let sexo = prompt('Infome o seu sexo: \n [Homem] - Se for HOMEM; \n [Mulher] - Se for MULHER');
 let valorCompras = parseFloat(prompt('Infome o valor das compras: R$ '));
 
-if(sexo == 'Homem'){
+if (sexo == 'Homem') {
     let desconto = valorCompras * 0.05;
-    document.write(nome+ ' o seu desconto foi de R$ '+desconto+ '<br />');
-    document.write('O valor total: R$ '+(valorCompras-desconto));
-}else if(sexo == 'Mulher'){
+    document.write(nome + ' o seu desconto foi de R$ ' + desconto + '<br />');
+    document.write('O valor total: R$ ' + (valorCompras - desconto));
+} else if (sexo == 'Mulher') {
     let desconto = valorCompras * 0.13;
-    document.write(nome+ ' o seu desconto foi de R$ '+desconto+ '<br />');
-    document.write('O valor total: R$ '+(valorCompras-desconto));
+    document.write(nome + ' o seu desconto foi de R$ ' + desconto + '<br />');
+    document.write('O valor total: R$ ' + (valorCompras - desconto));
 }
